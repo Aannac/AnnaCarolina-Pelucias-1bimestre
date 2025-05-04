@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento com Pix</title>
+    <link rel="stylesheet" href="Pagamento.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <h1>Pagamento com Pix</h1>
+    <p>Total da compra: R$ <span id="valor">0,00</span></p>
+
+    <button onclick="pagarPIX()">Gerar QR Code</button>
+    <button onclick="voltarParaLoja()">Voltar para a Loja</button>    
+
+    <section id="qrcode-area" class="qrcode-area" style="display: none;">
+        <h2>Escaneie o QR Code para pagar com PIX</h2>
+        <div id="qrcode"></div>
+    </section>
+   
+   <script>
+      function voltarParaLoja() {
+        window.location.href = '../index.html'; 
+      }
+    </script>
+    
+    <script src="Pagamento.js"></script>
+</body>
+</html>
