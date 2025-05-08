@@ -14,5 +14,5 @@ function revelarCupom() {
 }
 
 function voltarParaLoja() {
-  window.location.href = '../index.html'; // Voltar à página principal após revelar o cupom
+  window.location.href = '../Index.html'; // Voltar à página principal após revelar o cupom
 }
