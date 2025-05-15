@@ -160,7 +160,7 @@ function finalizePurchase() {
 
 
   alert(`Compra realizada por ${name}! Total: R$ ${total.toFixed(2)}`);
-  window.location.href = '../Pagamento/Pagamento.html';
+  window.location.href = './Pagamento/Pagamento.html';
 }
 function rasparCupom() {
   // Defina o cupom que será guardado no localStorage após a raspadinha
